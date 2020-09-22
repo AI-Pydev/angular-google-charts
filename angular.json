@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "lchart"
+    }
+  },
+  "defaultProject": "lchart",
+  "cli": {
+    "analytics": false
+  }
 }
