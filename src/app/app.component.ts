@@ -34,12 +34,24 @@ export class AppComponent {
    ];
    columns = ["Data", "L1", "L2","L3", "L4", "L5", "L6","L7", "L8"];
    options = {  
-      legend: { position: 'bottom', alignment: 'center'}, 
+      legend: { position: 'bottom', textStyle: {color: '#f2f2f2'}}, 
       hAxis: {
-         title: 'Sample data X'
+         title: 'Sample data X',
+         baselineColor: '#F2F2F2',
+         gridlines: {
+            count: 1
+          },
+         textStyle:{color: '#FFF'},
+         titleTextStyle:{color: '#FFF'}
       },
       vAxis:{
-         title: 'Sample data Y'
+         title: 'Sample data Y',
+         baselineColor: '#F2F2F2',
+         gridlines: {
+            count: 1
+          },
+         textStyle:{color: '#FFF'},
+         titleTextStyle:{color: '#FFF'}
       },
       pointSize: 10,
       animation: {
@@ -47,7 +59,14 @@ export class AppComponent {
          easing: 'linear',
          startup: true
        },
-      backgroundColor:'#f1f8e9',
+      chartArea: {
+         backgroundColor: 'transparent',
+      },
+      titleTextStyle: {
+         color: '#F2F2F2'
+       },
+      backgroundColor:'transparent',
+
       // crosshair:{
       //    color:'#000000',
       //    trigger:'selection'  
@@ -64,6 +83,7 @@ export class AppComponent {
 
 
    };
-   width = 1050;
+   
+   width = 1350;
    height = 500;
 }

@@ -1,0 +1,118 @@
+.grid-container {
+    display: grid;
+    width: 500px;
+    margin-right: 590px;
+    margin-left: 150px;
+    margin-bottom: 10px;
+  }
+  
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 1px 3px;
+    font-size: 14px;
+    text-align: left;
+    grid-row-start: var(--rowStart);
+    grid-row-end: var(--rowStart) + 1;
+    grid-column-start: var(--col);
+    grid-column-end: var(--col) + 1;
+    font-weight: 600;
+  }
+  
+  .newlyAdded {
+    background-color: #7e8d96;
+    border: 0px;
+    margin-left: 20px;
+    font-size: 8px;
+  }
+  
+  .program {
+    background-color: #00b0f0;
+    font-size: 8px;
+    text-align: center;
+    font-weight: 600;
+    border: 0px;
+    margin-left: 20px;
+  }
+  
+  .year {
+    background-color: #ffc514;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start: 2;
+    grid-column-end: 7;
+    height: 100%;
+    font-weight: 600;
+  }
+  
+  .years {
+    margin-left: 40px;
+    font-size: 1.3em;
+    font-weight: 600;
+    line-height: 1.5;
+    padding-right: 35px;
+  }
+  
+  .os {
+    background-color: #00b0f0;
+    color: #fff !important;
+    text-align: center;
+    border: 0px;
+    margin-left: 20px;
+    font-size: 8px;
+  }
+  
+  .programTab {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 1 / span 5;
+    width: 120px;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  
+  .yearTab {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    width: 120px;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  
+  .osTab {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 7 / span 4;
+    width: 120px;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  
+  /*body border*/
+  #chartdiv {
+    height: 450px;
+  }
+  .bckborder {
+    background-size: contain, 95% 95%;
+    /* background-repeat: no-repeat; */
+    height: 76vh;
+    /* background-position: 50% 50%; */
+    padding: 5px 8px 5px;
+    border-radius: 5px;
+    background: #1b1919;
+    background: radial-gradient(circle, #060606 0%, #27486d 100%);
+    box-shadow: 2px 2px px #fff;
+  }
+  /*bck card read*/
+  
