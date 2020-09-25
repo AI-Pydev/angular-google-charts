@@ -79,6 +79,7 @@ export class AppComponent {
         4: { pointShape: 'star' },
         5: { pointShape: 'polygon' }
     },
+   //  https://stackoverflow.com/questions/20764157/zoom-google-line-chart
     explorer: { 
       actions: ['dragToZoom', 'rightClickToReset'],
       axis: 'horizontal',
