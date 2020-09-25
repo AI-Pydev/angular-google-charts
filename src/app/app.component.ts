@@ -79,7 +79,12 @@ export class AppComponent {
         4: { pointShape: 'star' },
         5: { pointShape: 'polygon' }
     },
-    
+    explorer: { 
+      actions: ['dragToZoom', 'rightClickToReset'],
+      axis: 'horizontal',
+      keepInBounds: true,
+      maxZoomIn: 4.0
+    }
 
 
    };
